@@ -1,0 +1,113 @@
+Row #,Species,Count,Location,S/P,Date,LocID,SubID
+1,Chlorostilbon melanorhynchus,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+2,Amazilia saucerottei,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+3,Coragyps atratus,2,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+4,Rupornis magnirostris,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+5,Colaptes rubiginosus,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+6,Myiodynastes chrysocephalus,2,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+7,Tyrannus melancholicus,2,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+8,Henicorhina leucophrys,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+9,Atlapetes albinucha,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+10,Molothrus bonariensis,2,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+11,Ramphocelus flammigerus,2,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+12,Coereba flaveola,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,07 Jul 2020,L7427123,S71229280
+13,Bubulcus ibis,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,07 Jul 2020,L8241769,S71227975
+14,Thamnophilus multistriatus,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,07 Jul 2020,L8241769,S71227975
+15,Synallaxis azarae,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,07 Jul 2020,L8241769,S71227975
+16,Pygochelidon cyanoleuca,6,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,07 Jul 2020,L8241769,S71227975
+17,Zonotrichia capensis,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,07 Jul 2020,L8241769,S71227975
+18,Sporophila nigricollis,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,07 Jul 2020,L8241769,S71227975
+19,Tiaris olivaceus,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,07 Jul 2020,L8241769,S71227975
+20,Vanellus chilensis,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,05 Jul 2020,L7343904,S71175201
+21,Dryobates fumigatus,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,04 Jul 2020,L7343904,S71132749
+22,Euphonia laniirostris,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,04 Jul 2020,L7343904,S71132749
+23,Momotus aequatorialis,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,03 Jul 2020,L7343904,S71100191
+24,Pheugopedius mystacalis,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,03 Jul 2020,L7343904,S71100191
+25,Stilpnia vitriolina,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,03 Jul 2020,L7343904,S71100191
+26,Troglodytes aedon,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,01 Jul 2020,L8241769,S71014786
+27,Systellura longirostris,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,30 Jun 2020,L7343904,S71000758
+28,Turdus ignobilis,1,"Reserva Castilla (5,069, -75,505)",CO-CAL,29 Jun 2020,L7406587,S70965390
+29,Tangara gyrola,2,"Reserva Castilla (5,069, -75,505)",CO-CAL,29 Jun 2020,L7406587,S70965390
+30,Sicalis flaveola,4,"Reserva Castilla (5,069, -75,505)",CO-CAL,29 Jun 2020,L7406587,S70965390
+31,Zenaida auriculata,3,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,28 Jun 2020,L8241769,S70912316
+32,Taraba major,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,28 Jun 2020,L8241769,S70912316
+33,Thraupis episcopus,2,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,28 Jun 2020,L8241769,S70912316
+34,Saltator striatipectus,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,28 Jun 2020,L8241769,S70912316
+35,Leptosittaca branickii,14,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,26 Jun 2020,L7343904,S70843264
+36,Spinus psaltria,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,26 Jun 2020,L7343904,S70843264
+37,Elaenia frantzii,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,24 Jun 2020,L7427123,S70778362
+38,Saltator atripennis,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,21 Jun 2020,L8241769,S70688295
+39,Colibri coruscans,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,20 Jun 2020,L8241769,S70634368
+40,Pulsatrix perspicillata,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,19 Jun 2020,L8241769,S70613915
+41,Lepidocolaptes lacrymiger,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,07 Jun 2020,L7343904,S70181284
+42,Columba livia,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,06 Jun 2020,L8241769,S70119815
+43,Chlorophanes spiza,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,06 Jun 2020,L8241769,S70119815
+44,Amazilia tzacatl,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,06 Jun 2020,L8241769,S70119850
+45,Thraupis palmarum,2,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,06 Jun 2020,L8241769,S70119850
+46,Aulacorhynchus albivitta,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,29 May 2020,L8241769,S69799057
+47,Stilpnia heinei,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,15 May 2020,L7343904,S69082015
+48,Turdus fuscater,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,09 May 2020,L7343904,S68753722
+49,Todirostrum cinereum,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,09 May 2020,L7427123,S68686928
+50,Pitangus sulphuratus,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,09 May 2020,L7343904,S68677934
+51,Vireo leucophrys,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,09 May 2020,L7343904,S68677934
+52,Patagioenas fasciata,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,09 May 2020,L7427123,S68675403
+53,Myioborus miniatus,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,09 May 2020,L7427123,S68675403
+54,Cyanocorax yncas,2,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,09 May 2020,L7427123,S68675381
+55,Tangara arthus,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,09 May 2020,L7427123,S68675381
+56,Synallaxis brachyura,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,09 May 2020,L8241769,S68675351
+57,Zimmerius chrysops,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,09 May 2020,L8241769,S68675351
+58,Contopus virens,2,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,12 Apr 2020,L8241769,S67080403
+59,Setophaga fusca,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,07 Apr 2020,L8241769,S66766495
+60,Empidonax virescens,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,04 Apr 2020,L8241769,S66625039
+61,Piranga flava,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,01 Apr 2020,L8241769,S66503348
+62,Spinus xanthogastrus,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,25 Feb 2020,L7343904,S65076421
+63,Caracara cheriway,3,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,12 Feb 2020,L8241769,S64386105
+64,Piranga rubra,2,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,25 Jan 2020,L8241769,S63760738
+65,Stilpnia cyanicollis,2,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,25 Jan 2020,L8241769,S63760738
+66,Piaya cayana,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,19 Jan 2020,L7343904,S63551502
+67,Sayornis nigricans,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,08 Jan 2020,L7343904,S63166890
+68,Buteo platypterus,2,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,17 Dec 2019,L8241769,S62393314
+69,Mniotilta varia,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,11 Dec 2019,L7343904,S62226241
+70,Chaetocercus heliodor,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,07 Dec 2019,L8241769,S62227258
+71,Myiodynastes luteiventris,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,20 Oct 2019,L7427123,S60791598
+72,Catharus ustulatus,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,20 Oct 2019,L7427123,S60791598
+73,Setophaga ruticilla,2,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,23 Sep 2019,L7427123,S60055630
+74,Tangara labradorides,2,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,23 Sep 2019,L7427123,S60055630
+75,Icterus chrysater,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,22 Sep 2019,L7427123,S60022548
+76,Xenops rutilans,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,03 Jul 2019,L7343904,S57888809
+77,Picumnus granadensis,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,20 Jun 2019,L7343904,S57536392
+78,Myiozetetes cayanensis,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,04 May 2019,L8241769,S55813010
+79,Vireo olivaceus,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,06 Apr 2019,L7343904,S54627612
+80,Pheucticus ludovicianus,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,06 Apr 2019,L7343904,S54627612
+81,Parkesia noveboracensis,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,31 Mar 2019,L7343904,S54433292
+82,Melanerpes formicivorus,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,27 Feb 2019,L7343904,S53187271
+83,Cyanocorax affinis,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,26 Feb 2019,L7343904,S53161472
+84,Synallaxis albescens,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,24 Feb 2019,L7343904,S53090875
+85,Geothlypis philadelphia,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,02 Feb 2019,L7343904,S52306623
+86,Melanerpes rubricapillus,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,09 Jan 2019,L7343904,S51498181
+87,Cranioleuca erythrops,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,09 Jan 2019,L7343904,S51498181
+88,Leiothlypis peregrina,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,07 Jan 2019,L7343904,S51435539
+89,Chamaepetes goudotii,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,05 Jan 2019,L7343904,S51335651
+90,Anabacerthia striaticollis,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,26 Dec 2018,L7427123,S50975128
+91,Amazilia franciae,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,12 Dec 2018,L7343904,S50619719
+92,Catharus aurantiirostris,1,"Reserva de Castilla- (5,069, -75,505)",CO-CAL,11 Dec 2018,L8241769,S50599692
+93,Contopus sordidulus,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,09 Dec 2018,L7343904,S50548771
+94,Contopus cinereus,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,30 Nov 2018,L7343904,S50325857
+95,Elaenia flavogaster,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,27 Nov 2018,L7343904,S50259531
+96,Cardellina canadensis,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,26 Nov 2018,L7343904,S50246678
+97,Contopus cooperi,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,04 Nov 2018,L7343904,S49671396
+98,Myiarchus cephalotes,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,03 Nov 2018,L7343904,S49643619
+99,Myiarchus crinitus,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,03 Nov 2018,L7343904,S49643619
+100,Pipraeidea melanonota,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,30 Oct 2018,L7343904,S49570293
+101,Crotophaga ani,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,29 Oct 2018,L7343904,S49550073
+102,Setophaga cerulea,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,01 Oct 2018,L7343904,S48869757
+103,Colaptes punctigula,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,27 Sep 2018,L7343904,S48783370
+104,Tyrannus tyrannus,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,27 Sep 2018,L7343904,S48777064
+105,Setophaga petechia,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,26 Sep 2018,L7343904,S48760687
+106,Vireo flavoviridis,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,25 Sep 2018,L7343904,S48745720
+107,Sporophila luctuosa,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,22 Sep 2018,L7343904,S48669029
+108,Milvago chimachima,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,30 Aug 2018,L7343904,S48174845
+109,Colibri cyanotus,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,27 Jul 2018,L7427123,S47482038
+110,Dendrocincla fuliginosa,1,"Reserva De Castilla  (5,069, -75,504)",CO-CAL,27 Jul 2018,L7427123,S47482038
+111,Arremon brunneinucha,1,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,09 Jun 2018,L7343904,S46422846
+112,Pachyramphus polychopterus,2,"Reserva de Castilla - (5,069, -75,504)",CO-CAL,27 May 2018,L7343904,S46107225
