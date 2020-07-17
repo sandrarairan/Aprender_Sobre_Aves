@@ -29,16 +29,67 @@ answers<-sapply(nombre_cientifico,function(x) gsub("_XC.*","",x),USE.NAMES = F)
 
 #nombrecientifico<-list.files("www/",pattern="(.jpg)")
 orden  <- c("APODIFORMES", "APODIFORMES", "APODIFORMES", "Passeriformes","Passeriformes","Passeriformes","Piciformes","Pelecaniformes","Accipitriformes",
-            "Falconiformes","Passeriformes")
+            "Falconiformes","Passeriformes", "Passeriformes", "Passeriformes", "Apodiformes","Galliformes","Passeriformes",
+            "Apodiformes","Passeriformes","Piciformes","Apodiformes","Apodiformes","Columbiformes","Passeriformes","Passeriformes","Passeriformes",
+            "Passeriformes","Cathartiformes","Passeriformes","Cuculiformes","Passeriformes","Passeriformes","Passeriformes","Piciformes","Passeriformes",
+            "Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Psittaciformes","Piciformes","Piciformes",
+            "Falconiformes","Passeriformes","Passeriformes","Coraciiformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes",
+            "Passeriformes","Passeriformes","Passeriformes","Columbiformes","Passeriformes","Cuculiformes","Piciformes","Passeriformes","Passeriformes",
+            "Passeriformes","Passeriformes","Strigiformes","Passeriformes","Passeriformes","Accipitriformes","Passeriformes","Passeriformes","Passeriformes",
+            "Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes",
+            "Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes",
+            "Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes","Passeriformes",
+            "Passeriformes","Passeriformes","Columbiformes","Passeriformes","Passeriformes"
+            )
+
 familia<- c("TROCHILIDAE","TROCHILIDAE", "TROCHILIDAE","Furnariidae","Passerellidae","Passerellidae","Ramphastidae","Ardeidae","Accipitridae",
-            "Falconidae","Parulidae")
+            "Falconidae","Parulidae", "Turdidae", "Turdidae", "Trochilidae", "Cracidae","Thraupidae","Trochilidae","Thraupidae",
+            "Picidae","Trochilidae","Trochilidae","Columbidae","Tyrannidae","Tyrannidae","Tyrannidae","Tyrannidae","Cathartidae","Furnariidae",
+            "Cuculidae","Corvidae","Corvidae","Furnariidae","Picidae","Tyrannidae","Tyrannidae","Fringillidae","Parulidae","Icteridae","Parulidae",
+            "Furnariidae","Psittacidae","Picidae","Picidae","Falconidae","Parulidae","Icteridae","Momotidae","Tyrannidae","Tyrannidae","Parulidae",
+            "Tyrannidae","Tyrannidae","Tyrannidae","Tityridae","Parulidae","Columbidae","Cardinalidae","Cuculidae","Picidae","Thraupidae","Cardinalidae",
+            "Cardinalidae","Tyrannidae","Strigidae","Hirundinidae","Thraupidae","Accipitridae","Thraupidae","Thraupidae","Tyrannidae","Parulidae","Parulidae",
+            "Parulidae","Parulidae","Thraupidae","Fringillidae","Fringillidae","Thraupidae","Thraupidae","Thraupidae","Thraupidae","Thraupidae","Furnariidae",
+            "Thraupidae","Thraupidae","Thraupidae","Thamnophilidae","Thraupidae","Thraupidae","Thraupidae","Tyrannidae","Troglodytidae","Turdidae","Turdidae",
+            "Tyrannidae","Tyrannidae","Vireonidae","Vireonidae","Furnariidae","Columbidae","Tyrannidae","Passerellidae"
+            )
+
 genero<- c("Amazilia","Amazilia","Amazilia", "Anabacerthia","Arremon","Atlapetes","Aulacorhynchus","Bubulcus","Buteo",
-           "Caracara","Cardellina ")
+           "Caracara","Cardellina","Catharus", "Catharus", "Chaetocercus","Chamaepetes","Chlorophanes","Chlorostilbon","Coereba",
+           "Colaptes","Colibri","Colibri","Columba","Contopus","Contopus","Contopus","Contopus","Coragyps","Cranioleuca","Crotophaga",
+           "Cyanocorax","Cyanocorax","Dendrocincla","Dryobates","Elaenia","Empidonax","Euphonia","Geothlypis","Icterus","Leiothlypis",
+           "Lepidocolaptes","Leptosittaca","Melanerpes","Melanerpes","Milvago","Mniotilta","Molothrus","Momotus","Myiarchus","Myiarchus","Myioborus",
+           "Myiodynastes","Myiodynastes","Myiozetetes","Pachyramphus","Parkesia","Patagioenas","Pheucticus","Piaya","Picumnus","Pipraeidea","Piranga",
+           "Piranga","Pitangus","Pulsatrix","Pygochelidon","Ramphocelus","Rupornis","Saltator","Saltator","Sayornis","Setophaga","Setophaga","Setophaga",
+           "Setophaga","Sicalis","Spinus","Spinus","Sporophila","Sporophila","Stilpnia","Stilpnia","Stilpnia","Synallaxis","Tangara","Tangara","Tangara",
+           "Thamnophilus","Thraupis","Thraupis","Tiaris","Todirostrum","Troglodytes","Turdus","Turdus","Tyrannus","Tyrannus","Vireo","Vireo","Xenops","Zenaida",
+           "Zimmerius","Zonotrichia"
+           )
+
 nombre_ingles <- c("Andean Emerald","Steely-vented Hummingbird","Rufous-tailed Hummingbird","Montane Foliage-gleaner","Chestnut-capped Brushfinch","White-naped Brushfinch","Southern Emerald-Toucanet",
-                   "Cattle Egret","Broad-winged Hawk", "Crested Caracara","Canada Warbler"
+                   "Cattle Egret","Broad-winged Hawk", "Crested Caracara","Canada Warbler","Orange-billed Nightingale-Thrush", "Swainson's Thrush", "Gorgeted Woodstar","Sickle-winged Guan",
+                   "Green Honeycreeper","Western Emerald","Bananaquit","Golden-olive Woodpecker","Sparkling Violetear","Lesser Violetear","Rock Pigeon","Tropical Pewee","Olive-sided Flycatcher",
+                   "Western Wood-Pewee","Eastern Wood-Pewee","Black Vulture","Red-faced Spinetail","Smooth-billed Ani","Curl-crested Jay","Green Jay","Plain-brown Woodcreeper","Smoky-brown Woodpecker",
+                   "Mountain Elaenia","Acadian Flycatcher","Thick-billed Euphonia","Mourning Warbler","Yellow-backed Oriole","Tennessee Warbler","Montane Woodcreeper","Golden-plumed Parakeet",
+                   "Acorn Woodpecker","Red-crowned Woodpecker","Yellow-headed Caracara","Black-and-white Warbler","Shiny Cowbird","Andean Motmot","Pale-edged Flycatcher","Great Crested Flycatcher",
+                   "Slate-throated Redstart","Golden-crowned Flycatcher","Sulphur-bellied Flycatcher","Rusty-margined Flycatcher","White-winged Becard","Northern Waterthrush","Band-tailed Pigeon",
+                   "Rose-breasted Grosbeak","Squirrel Cuckoo","Grayish Piculet","Fawn-breasted Tanager","Hepatic Tanager","Summer Tanager","Great Kiskadee","Spectacled Owl","Blue-and-white Swallow",
+                   "Flame-rumped Tanager","Roadside Hawk","Black-winged Saltator","Streaked Saltator","Black Phoebe","Cerulean Warbler","Blackburnian Warbler","Yellow Warbler","American Redstart",
+                   "Saffron Finch","Lesser Goldfinch","Yellow-bellied Siskin","Black-and-white Seedeater","Yellow-bellied Seedeater","Blue-necked Tanager","Black-capped Tanager","Scrub Tanager",
+                   "Azara's Spinetail","Golden Tanager","Bay-headed Tanager","Metallic-green Tanager","Bar-crested Antshrike","Blue-gray Tanager","Palm Tanager","Yellow-faced Grassquit","Common Tody-Flycatcher",
+                   "House Wren","Great Thrush","Black-billed Thrush","Tropical Kingbird","Eastern Kingbird","Yellow-green Vireo","Brown-capped Vireo","Streaked Xenops","Eared Dove","Golden-faced Tyrannulet","Rufous-collared Sparrow"
                   )
+
 clasificacion <- c("Residente", "Residente", "Residente","Residente","Residente","Residente","Residente","Residente","Migratorio boreal",
-                   "Residente","Migratorio boreal")
+                   "Residente","Migratorio boreal", "Residente", "Migratorio boreal", "Residente", "Residente","Residente","Residente",
+                   "Residente","Residente","Residente","Residente","Introducido","Residente","Migratorio boreal","Migratorio boreal","Migratorio boreal",
+                   "Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Migratorio boreal","Residente","Migratorio boreal","Residente",
+                   "Migratorio boreal","Residente","Residente","Residente","Residente","Residente","Migratorio boreal","Residente","Residente","Residente","Migratorio boreal",
+                   "Residente","Residente","Migratorio boreal","Residente","Residente","Migratorio boreal","Residente","Migratorio boreal","Residente","Endémico","Residente","Residente",
+                   "Migratorio boreal","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Migratorio boreal","Migratorio boreal","Migratorio boreal",
+                   "Migratorio boreal","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente",
+                   "Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Migratorio boreal","Migratorio boreal","Residente","Residente","Residente","Residente","Residente"
+                   )
 
 # Define la UI
 ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shinythemes::shinytheme("darkly"),
