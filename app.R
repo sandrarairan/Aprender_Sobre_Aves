@@ -1,6 +1,8 @@
 library(shiny)
 library(rlist)
 library(shinyWidgets)
+library(dplyr)
+library(collapsibleTree)
 
 # Para que se mustren las imagenes y videos es necesario crear una carpeta de www
 fileaudio<-list.files("www/",pattern="(.wav)") # produce un vector de caracteres de los nombres de archivos [1] "Sicalis flaveola.wav"  "Spinus psaltria.wav"   "Synallaxis azarae.wav"
@@ -90,9 +92,28 @@ clasificacion <- c("Residente", "Residente", "Residente","Residente","Residente"
                    "Migratorio boreal","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente",
                    "Residente","Residente","Residente","Residente","Residente","Residente","Residente","Residente","Migratorio boreal","Migratorio boreal","Residente","Residente","Residente","Residente","Residente"
                    )
+# arbol
+aves_df<- read.csv("aves.csv",sep=";")
+
+aves_df <- arrange(aves_df, Orden, Familia)
+
+#install.packages("collapsibleTree")
+arbol_aves <- collapsibleTree(
+  root = "bird",
+  aves_df,
+  attribute = "leafCount",
+  hierarchy = c("Orden", "Familia","Genero","Nombre_Cientifico"),
+  fill = "#BB8FCE",
+  fontSize = 10,
+  zoomable = TRUE,
+  collapsed = TRUE,
+  nodeSize  =  "leafCount" ,
+  tooltip = TRUE
+)
+
 
 # Define la UI
-ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shinythemes::shinytheme("darkly"),
+ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shinythemes::shinytheme("cerulean"),
                 
                  tabPanel("Adivinar ¿Qué Ave es?", 
                           fluidPage(
@@ -144,7 +165,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                        font-family: 'Helvetica';
                        font-weight: 500;
                        line-height: 1.1;
-                       color: white;
+                       color: black;
                        margin-left:1px; 
                        margin-top: 5px;
                        
@@ -200,7 +221,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                  ),
                  tabPanel("Información Aves",
                           
-                          mainPanel(class="body",width=10,
+                          mainPanel(class="body",width=20,
                             tabsetPanel(
                               tabPanel("Información de cada ave",
                           
@@ -232,24 +253,10 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                                          
                                        })
                               ),
-                              tabPanel("Tab 2", "This panel is intentionally left blank",
+                              tabPanel("Árbol jerárquico de aves", "",
                                        
-                                       fluidRow(
-                                         column(4,
-                                                "4"
-                                         ),
-                                         column(4, offset = 4,
-                                                "4 offset 4"
-                                         )      
-                                       ),
-                                       fluidRow(
-                                         column(3, offset = 3,
-                                                "3 offset 3"
-                                         ),
-                                         column(3, offset = 3,
-                                                "3 offset 3"
-                                         )  
-                                       )
+                                       column(9, wellPanel("Visualizar un árbol jerárquico de las aves",arbol_aves)),
+                                       
                                        
                                        ),
                               tabPanel("Tab 3", "This panel is intentionally left blank",
