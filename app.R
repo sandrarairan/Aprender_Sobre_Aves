@@ -3,6 +3,7 @@ library(rlist)
 library(shinyWidgets)
 library(dplyr)
 library(collapsibleTree)
+library(leaflet.extras)
 
 # Para que se mustren las imagenes y videos es necesario crear una carpeta de www
 fileaudio<-list.files("www/",pattern="(.wav)") # produce un vector de caracteres de los nombres de archivos [1] "Sicalis flaveola.wav"  "Spinus psaltria.wav"   "Synallaxis azarae.wav"
@@ -112,6 +113,11 @@ arbol_aves <- collapsibleTree(
 )
 
 
+
+
+
+
+
 # Define la UI
 ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shinythemes::shinytheme("cerulean"),
                 
@@ -139,7 +145,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                          border-color: #317eac;
                          border-width: 2px;
                          border-style: solid;
-                         background: #67bf73;
+                         background: #34495E;
                          color: white;}
                        
                        .callButton{
@@ -255,13 +261,14 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                               ),
                               tabPanel("Árbol jerárquico de aves", "",
                                        
-                                       column(9, wellPanel("Visualizar un árbol jerárquico de las aves",arbol_aves)),
+                                       column(12, wellPanel("Visualizar un árbol jerárquico de las aves",arbol_aves)),
                                        
                                        
                                        ),
-                              tabPanel("Tab 3", "This panel is intentionally left blank",
-                                       column(2, wellPanel(p("Column width 2"))),
-                                       
+                              tabPanel("Mapa", "",
+                                      ##wellPanel(fluidRow( mapa))
+                                   
+                                      column(12, wellPanel("Mapa",   leafletOutput("map"))),
                                        )
                             )
                           )
@@ -341,6 +348,29 @@ server <- function(input, output) {
     tagList(fullQuiz()[1:vals$counter])
     
   })
+  
+  #map
+
+    
+    #  map
+    output$map <- renderLeaflet({
+    leaflet(data=aves_df, height = "100%") %>% addProviderTiles(providers$Stamen.Watercolor, group = "Stamen Watercolor", options = providerTileOptions(noWrap = TRUE)) %>%#, minZoom = 4)) %>%
+    addProviderTiles(providers$OpenStreetMap.Mapnik, group = "Open Street Map", options = providerTileOptions(noWrap = TRUE)) %>%
+    addProviderTiles(providers$NASAGIBS.ViirsEarthAtNight2012, group = "Nasa Earth at Night", options = providerTileOptions(noWrap = TRUE)) %>%
+    addProviderTiles(providers$Stamen.TerrainBackground, group = "Stamen Terrain Background", options = providerTileOptions(noWrap = TRUE)) %>%
+    addProviderTiles(providers$Esri.WorldImagery, group = "Esri World Imagery", options = providerTileOptions(noWrap = TRUE)) %>%
+    addFullscreenControl() %>%
+    addMarkers(
+      lat = ~Latitud,
+      lng=  ~Longitud,
+      clusterOptions = markerClusterOptions()
+    ) %>%
+    addLayersControl(
+      baseGroups = c("Stamen Watercolor","Open Street Map","Nasa Earth at Night","Stamen Terrain Background","Esri World Imagery"),
+      position = c("topleft"),
+      options = layersControlOptions(collapsed = TRUE)
+    )
+    })
   
   
 }
