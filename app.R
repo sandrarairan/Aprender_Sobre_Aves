@@ -130,8 +130,8 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                        margin: 20px;
                        border-width: 5px;
                        border-style: solid;
-                       max-height: 200px;
-                       max-width: 100%;
+                       max-height: 400px;
+                       max-width: 200%;
                        width: auto;
                        display: inline;
                        }
@@ -166,6 +166,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                        text-indent: 8px;
                        width: 100%;
                        padding: 0px;
+                       text-align: center;
                        }
                        h5 {
                        font-family: 'Helvetica';
@@ -176,7 +177,28 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                        margin-top: 5px;
                        
        
-                         }
+                       }
+                       
+                       a {
+                           background-color: #317eac;
+                           color: white;
+                           text-align: center;
+                           text-decoration: underline;
+                           padding: 1em 10.5em;
+                           justify-self: center;
+                           display: inline-block;
+                           }
+
+                     a:hover {
+                            background-color: white;
+                             }
+
+                     a:active {
+                           background-color: black;
+                              }
+
+                     
+                       
                        ")
                               )
                             ),
@@ -269,7 +291,37 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                                       ##wellPanel(fluidRow( mapa))
                                    
                                       column(12, wellPanel("Mapa",   leafletOutput("map"))),
-                                       )
+                                       ),
+                              tabPanel("Videos Aves Urbanas", tags$h3("Videos aves Urbanas en Manizales"),br(),br(),
+                                       tags$h3("TURDUS IGNOBILIS"),
+                                       wellPanel(fluidRow( column(1,  htmlOutput("videos")))),
+                                    
+                                       tags$h3("ESPECTOGRAMA DINAMICO  TURDUS IGNOBILIS"),
+                                       wellPanel(fluidRow( column(1,  htmlOutput("videos_especto")))),
+                                       
+                                       tags$h3("SPINUS PSALTRIA"),
+                                       wellPanel(fluidRow( column(1,  htmlOutput("videos_2")))),
+                                       
+                                       tags$h3("Sicalis Flaveola"),
+                                       wellPanel(fluidRow( column(1,  htmlOutput("videos_3")))),
+                                       
+                                       tags$h3("ESPECTOGRAMA DINAMICO SPINUS PSALTRIA"),
+                                       wellPanel(fluidRow( column(1,  htmlOutput("videos_especto_2")))),
+                                      
+                                       tags$h3("ESPECTOGRAMA DINAMICO Systellura Longirostris"),
+                                       wellPanel(fluidRow( column(1,  htmlOutput("videos_especto_3")))),
+                                       
+                                       tags$h3("ESPECTOGRAMA DINAMICO Sicalis Flaveola"),
+                                       wellPanel(fluidRow( column(1,  htmlOutput("videos_especto_4")))),
+                                       
+                                       tags$h3("ESPECTOGRAMA DINAMICO Aulacorhynchus Albivitta"),
+                                       wellPanel(fluidRow( column(1,  htmlOutput("videos_especto_5")))),
+                                       
+                                       tags$h3("ESPECTOGRAMA DINAMICO Elaenia frantzii"),
+                                       wellPanel(fluidRow( column(1,  htmlOutput("videos_especto_6")))),
+                                       
+                                       
+                              )
                             )
                           )
                  )#fin tabpanel1 navbar
@@ -371,8 +423,54 @@ server <- function(input, output) {
       options = layersControlOptions(collapsed = TRUE)
     )
     })
-  
-  
+
+ #videos
+    output$videos <- renderUI({
+      
+      tags$a(href="https://www.youtube.com/watch?v=x_aGqdrmaeY", "VIDEO TURDUS IGNOBILIS ! ")
+    })
+    
+    output$videos_2 <- renderUI({
+      
+      tags$a(href="https://www.youtube.com/watch?v=6ujwCzp_GtY", "VIDEO SPINUS PSALTRIA ! ")
+    })
+    
+    output$videos_3 <- renderUI({
+      
+      tags$a(href="https://www.youtube.com/watch?v=HjAwgwWknGg", "VIDEO SICALIS FLAVEOLA ! ")
+    })
+    
+    output$videos_especto <- renderUI({
+      
+      tags$a(href="https://youtu.be/6tva76iN2EM", "ESPECTOGRAMA DINAMICO TURDUS IGNOBILIS ! ")
+    })
+    
+   
+    output$videos_especto_2 <- renderUI({
+      
+      tags$a(href="https://www.youtube.com/watch?v=nF_t-j28M8Q", "ESPECTOGRAMA DINAMICO SPINUS PSALTRIA ! ")
+    })
+    
+    output$videos_especto_3 <- renderUI({
+      
+      tags$a(href="https://www.youtube.com/watch?v=JRVo4_0hjPs", "ESPECTOGRAMA DINAMICO Systellura Longirostris ! ")
+    })
+    
+    output$videos_especto_4 <- renderUI({
+      
+      tags$a(href="https://www.youtube.com/watch?v=Yxbd2iyyLd0", "ESPECTOGRAMA DINAMICO SICALIS FLAVEOLA  ! ")
+    })
+    
+    output$videos_especto_5 <- renderUI({
+      
+      tags$a(href="https://www.youtube.com/watch?v=_Urh4iMlKvI", "ESPECTOGRAMA DINAMICO Aulacorhynchus Albivitta ! ")
+    })
+    
+    
+    output$videos_especto_6 <- renderUI({
+      
+      tags$a(href="https://www.youtube.com/watch?v=98yfAhB2x7g", "ESPECTOGRAMA DINAMICO Elaenia frantzii ! ")
+    })
 }
 
 # Run the application 
