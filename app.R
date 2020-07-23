@@ -130,8 +130,8 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                        margin: 20px;
                        border-width: 5px;
                        border-style: solid;
-                       max-height: 400px;
-                       max-width: 200%;
+                       max-height: 500px;
+                       max-width: 300%;
                        width: auto;
                        display: inline;
                        }
@@ -179,6 +179,22 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
        
                        }
                        
+                       p {
+                       font-family: 'Helvetica';
+                       font-weight: 500;
+                       line-height: 1.1;
+                       color: black;
+                       justify-self: center;
+                       margin-left:0px; 
+                       margin-right: 0px;
+                       text-indent: 8px;
+                       width: 100%;
+                       padding: 0px;
+                       text-align: center;
+                       
+       
+                       }
+                       
                        a {
                            background-color: #317eac;
                            color: white;
@@ -212,7 +228,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                                                checkboxInput("showaudio","Canto",T)
                                                #checkboxInput("showvideo","Video",F)
                                            ),
-                                           sliderInput("picsize","Tamaño Imagen",20,1000,100,step=20,ticks=F,width="100%"),
+                                           sliderInput("picsize","Tamaño Imagen",20,1000,100,step=20,ticks=F,width="500%"),
                                            actionButton("reset","Reset",class="btn btn-secondary",icon=icon("times-circle")),
                                            br(),
                                            tags$br(),
@@ -236,7 +252,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                                     lapply(1:length(nombre_cientifico),function(i) {
                                       wellPanel(fluidRow(
                                         h3(paste0(i,": ",answers[i])),
-                                        img(src=nombrecientifico[i],height="200px",width="auto")
+                                        img(src=nombrecientifico[i],height="500px",width="500px")
                                         #img(src=specfile[i]),
                                         #tags$audio(src=audiofile[i],type = "audio/wav", controls = "false")
                                         #tags$video(src=videofile[i],type = "video/mp4", autoplay ="false" , controls =NA,height="200px",width="auto"),
@@ -247,6 +263,28 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                                     })
                           )
                  ),
+                 
+                 tabPanel("Información",
+                          
+                          mainPanel(class="body",width=10,
+                                    
+                          tags$h3("Inventario Aves Barrio Santa Elena - Manizales, Caldas, Colombia")      
+                          ),br(),br(),
+                          column(12, wellPanel(tags$p("Las fotografías y audios fueron realizadas por Sandra Raián para realizar un inventario de las aves urbanas en Manizales."))),  br(),br(),br(),br(),
+                          tags$h3("Referencias"),
+                          column(12, wellPanel(tags$p("Los espectogramas dinámicos fueron realizados en R con el paquete dynaSpec - Cite:
+                                                      Araya-Salas M y M. Wilkins. (2020), dynaSpec: visualizaciones espectrograma dinámicos en R . Paquete R versión 1.0.0."))),
+                          column(12, wellPanel(tags$p("Librerias utilizadas:  (shiny), 
+                          (rlist),
+                         shinyWidgets),
+                          (dplyr),
+                        (collapsibleTree), 
+                        (leaflet.extras)"))),
+                          column(12, wellPanel(tags$p("Las imagenes de los espoctogrmas fureon realizadas con el paquete seewave:  citation(seewave)")))
+                          
+                         
+                 ),
+                 
                  tabPanel("Información Aves",
                           
                           mainPanel(class="body",width=20,
@@ -264,7 +302,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                                                                tags$h5(strong("Clasificación: "),clasificacion[i]),                 
                                                                
                                                                )),
-                                           img(src=nombrecientifico[i],height="200px",width="auto"),
+                                           img(src=nombrecientifico[i],height="800px",width="500px"),
                                            
                                            
                                            #tags$h5(familia[i]),
@@ -281,6 +319,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                                          
                                        })
                               ),
+                             
                               tabPanel("Árbol jerárquico de aves", "",
                                        
                                        column(12, wellPanel("Visualizar un árbol jerárquico de las aves",arbol_aves)),
