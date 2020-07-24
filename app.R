@@ -3,7 +3,9 @@ library(rlist)
 library(shinyWidgets)
 library(dplyr)
 library(collapsibleTree)
+library(leaflet)
 library(leaflet.extras)
+
 
 # Para que se mustren las imagenes y videos es necesario crear una carpeta de www
 fileaudio<-list.files("www/",pattern="(.wav)") # produce un vector de caracteres de los nombres de archivos [1] "Sicalis flaveola.wav"  "Spinus psaltria.wav"   "Synallaxis azarae.wav"
@@ -96,12 +98,14 @@ clasificacion <- c("Residente", "Residente", "Residente","Residente","Residente"
 # arbol
 aves_df<- read.csv("aves.csv",sep=";")
 
-aves_df <- arrange(aves_df, Orden, Familia)
+write.csv(aves_df,"bird.csv",fileEncoding = 'UTF-8')
+birds_df<- read.csv("bird.csv")
+birds_df <- arrange(birds_df, Orden, Familia)
 
 #install.packages("collapsibleTree")
 arbol_aves <- collapsibleTree(
   root = "bird",
-  aves_df,
+  birds_df,
   attribute = "leafCount",
   hierarchy = c("Orden", "Familia","Genero","Nombre_Cientifico"),
   fill = "#BB8FCE",
@@ -130,8 +134,8 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                        margin: 20px;
                        border-width: 5px;
                        border-style: solid;
-                       max-height: 500px;
-                       max-width: 300%;
+                       max-height: 200px;
+                       max-width: 100%;
                        width: auto;
                        display: inline;
                        }
@@ -252,7 +256,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                                     lapply(1:length(nombre_cientifico),function(i) {
                                       wellPanel(fluidRow(
                                         h3(paste0(i,": ",answers[i])),
-                                        img(src=nombrecientifico[i],height="500px",width="500px")
+                                        img(src=nombrecientifico[i],height="200px",width="auto")
                                         #img(src=specfile[i]),
                                         #tags$audio(src=audiofile[i],type = "audio/wav", controls = "false")
                                         #tags$video(src=videofile[i],type = "video/mp4", autoplay ="false" , controls =NA,height="200px",width="auto"),
@@ -302,7 +306,7 @@ ui <- navbarPage(title="Aves Reserva de Castilla",position="fixed-top",theme=shi
                                                                tags$h5(strong("Clasificación: "),clasificacion[i]),                 
                                                                
                                                                )),
-                                           img(src=nombrecientifico[i],height="800px",width="500px"),
+                                           img(src=nombrecientifico[i],height="200px",width="auto"),
                                            
                                            
                                            #tags$h5(familia[i]),
