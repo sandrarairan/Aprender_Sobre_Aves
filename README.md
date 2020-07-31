@@ -22,3 +22,8 @@ Araya-Salas M y M. Wilkins. (2020), dynaSpec: visualizaciones espectrograma dinÃ
 
 > library("shiny")
 > runGitHub("Aprender_Sobre_Aves", "sandrarairan")
+
+## Referncias
+
+https://github.com/drwilkins/WildlifeBingo
+
